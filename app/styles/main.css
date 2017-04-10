@@ -27,3 +27,78 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
+/* Style for our header texts
+  * --------------------------------------- */
+  h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+  }
+
+  /* Centered texts in each section
+  * --------------------------------------- */
+  .section{
+    text-align:center;
+  }
+
+
+  /* Backgrounds will cover all the section
+  * --------------------------------------- */
+  #section0,
+  #section1,
+  #section2,
+  #section3{
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* Defining each sectino background and styles
+  * --------------------------------------- */
+  #section0{
+    background-image: url(https://www.biography.com/.image/t_share/MTQ1MjI5NDA1MTM0NzkyMDg4/anne-frank---the-diary.jpg);
+  }
+  #section0 h1{ 
+    top: 50%;/* esta es la letra del centro*/
+    transform: translateY(-50%);
+    position: relative;
+    color: black;
+  }
+
+  #sectionparragraph{
+
+    background-image: url(http://s2.firstpost.in/wp-content/uploads/2016/06/Anne-Frank-Desk.jpg);
+    color: red;
+    font-size: 24px;
+  }
+  #section2{
+    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg3.jpg);
+    padding: 6% 0 0 0;
+  }
+  #section3{
+    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg4.jpg);
+    padding: 6% 0 0 0;
+  }
+  #section3 h1{
+    color: #000;
+  }
+
+
+  /*Adding background for the slides
+  * --------------------------------------- */
+  #slide1{
+    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg2.jpg);
+    padding: 6% 0 0 0;
+  }
+  #slide2{
+    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg5.jpg);
+    padding: 6% 0 0 0;
+  }
+
+
+  /* Bottom menu
+  * --------------------------------------- */
+  #infoMenu li a {
+    color: #fff;
+  }

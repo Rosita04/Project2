@@ -6,9 +6,9 @@
     "modernizr": "~2.8.1",
     "materialize": "^0.98.1",
     "animate.css": "^3.5.2",
-    "turn.js": "*",
     "fullpage.js": "^2.9.4",
-    "pixi.js": "^4.4.4"
+    "pixi.js": "^4.4.4",
+    "threejs": "*"
   },
   "devDependencies": {
     "chai": "^3.5.0",
