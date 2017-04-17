@@ -8,7 +8,7 @@
     "animate.css": "^3.5.2",
     "fullpage.js": "^2.9.4",
     "pixi.js": "^4.4.4",
-    "threejs": "*"
+    "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
