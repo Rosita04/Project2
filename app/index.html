@@ -49,143 +49,111 @@
 
 
 
-<div id="fullpage">
-  <div class="section" id="section0"><h1></h1>
+<div id="fullpage"><!--ABRE CONTENT-->
+  <div class="section" id="section0"><h1></h1><!--ABRE SECTION 0-->
 
 
 
+<main><!--WOW MOMENT 1 CODE BEGINNIG-->
+  <section class="mast">
+    <figure class="mast__bg" style="background-image:url(http://eskipaper.com/images/anne-frank-4.jpg)"></figure>
+    <header class="mast__header">
+      <h1 class="mast__title js-spanize">My Name was Anne Frank</h1> 
+      <hr class="sep"/>
+      <p class="mast__text js-spanize">
+I don't want to have lived in vain like most people,
+I want to be useful or bring enjoyment to all people,
+even those I've never met. 
+I want to go on living even after my death!
+</p>
 
-    <div id="snow">
+<div class="wrapper">
+
+  <div class="item">
+    <div class="polaroid"><img src="https://s3.amazonaws.com/one-org/us/wp-content/uploads/2015/05/anne-frank.jpg">
+      <div class="caption">This was me</div>
     </div>
+  </div>
+  <div>
+
+    </header>
+  </section>
+</main>
 
 
-<svg width="100%" height="100%"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-    <rect x="0%" y="0%" width="100%" height="100%" fill="black" />
-
-<svg width="600" height="400" viewBox="300 200 600 400"
-     x="50%" y="50%"
-     style="overflow: visible;"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:sw="http://www.svgopen.org/2004/svgWow"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-
-    <defs>
-        <filter id="glow" height="150%" y="-25%">
-            <feFlood flood-color="white" />
-            <feComposite in2="SourceAlpha" operator="in" />
-            <feGaussianBlur stdDeviation="4" />
-            <feComponentTransfer>
-                <feFuncA type="linear" slope="3" intercept="0" />
-            </feComponentTransfer>
-            <feMerge>
-                <feMergeNode />
-                <feMergeNode in="SourceGraphic" />
-            </feMerge>
-        </filter>
-
-        <filter id="chiseled" filterUnits="userSpaceOnUse" x="0" y="0" width="600" height="400">
-            <!-- =========================================================== -->
-            <!-- Background lighting                                         -->
-            <!-- =========================================================== -->
-            <!-- Base texture . Build a texture map from it -->
-            <feImage xlink:href="http://svg-wow.org/res/2.0/images/textures/rust.jpg" result="texture"/>
-            <feMerge result="textureAndGraphic">
-                <feMergeNode />
-                <feMergeNode in="SourceGraphic" />
-            </feMerge>
-            <feColorMatrix type="luminanceToAlpha" in="texture"
-                                                           result="textureMap"/>
-
-            <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
-
-            <feDiffuseLighting in="textureMap" surfaceScale="2" lighting-color="white"
-                          diffuseConstant="1" result="backgroundDiff">
-                <feSpotLight id="spotLight" x="50" y="50" z="150"
-                             pointsAtX="150" pointsAtY="150" pointsAtZ="0"
-                             specularExponent="8" />
-            </feDiffuseLighting>
-
-            <feDiffuseLighting in="blur" surfaceScale="6" lighting-color="white"
-                          diffuseConstant="1.2" result="foregroundDiffAll">
-                <feDistantLight id="distantLight" azimuth="-135" elevation="40" />
-            </feDiffuseLighting>
-            <feComponentTransfer>
-                <feFuncR type="gamma" amplitude="1" exponent="3" offset="0"/>
-                <feFuncG type="gamma" amplitude="1" exponent="3" offset="0"/>
-                <feFuncB type="gamma" amplitude="1" exponent="3" offset="0"/>
-            </feComponentTransfer>
-            <feComposite operator="in" in2="SourceAlpha"/>
-            <feConvolveMatrix order="3" kernelMatrix="0.0625 0.0625 0.0625
-                                                     0.0625 0.5 0.0625
-                                                     0.0625 0.0625 0.0625"
-                                                       result="foregroundDiff"/>
-
-            <feMerge result="diff">
-                <feMergeNode in="backgroundDiff" />
-                <feMergeNode in="foregroundDiff" />
-            </feMerge>
-
-            <feColorMatrix type="luminanceToAlpha" in="diff" result="screenMask"/>
-            <feComponentTransfer result="multiplyMask">
-                <feFuncA type="linear" slope="-1" intercept="1"/>
-            </feComponentTransfer>
-
-            <feBlend mode="screen" in2="textureAndGraphic" in="diff" result="screen"/>
-            <feBlend mode="multiply" in2="textureAndGraphic" in="diff" result="multiply"/>
-
-            <feComposite operator="in" in="screen" in2="screenMask" result="maskedScreen"/>
-            <feComposite operator="in" in="multiply" in2="multiplyMask" result="maskedMultiply"/>
-
-            <feComposite operator="arithmetic" in="maskedScreen" in2="maskedMultiply"
-                        k1="0" k2="1" k3="1" k4="0" result="background" />
 
 
-            <!-- =========================================================== -->
-            <!-- Shadow                                                      -->
-            <!-- =========================================================== -->
-            <!-- Create a blur to build the shadow. -->
-            <feMorphology operator="dilate" in="SourceAlpha" radius="4" />
-            <feGaussianBlur stdDeviation="4" result="blur"/>
-            <feOffset id="offset" dx="12" dy="12" result="offsetBlur"/>
-            <feComposite in2="SourceAlpha" operator="out" result="shadow" />
-
-            <feMerge>
-                <feMergeNode in="background" />
-                <feMergeNode in="shadow"/>
-            </feMerge>
-        </filter>
-
-    </defs>
-
-   <g>
-       <g font-weight="normal" text-anchor="middle" font-family="Garamond">
-           <text x="300" y="230" font-size="200"
-              fill="gold" filter="url(#chiseled)">ANNE</text>
-           <g transform="translate(35,295)" font-family="'Garamond'"
-              font-weight="bold" font-size="30" filter="url(#glow)">
-                <text x="100">F</text>
-                <text x="168">R</text>
-                <text x="236">A</text>
-                <text x="304">N</text>
-                <text x="368">K</text>
-            </g>
-       </g>
-    </g>
 
 
-</svg>
-</svg>
+
+
+
+
+
+
+
+</div><!--CIERRA SECTION 0-->
+
+
+<!--WOW MOMENT 1 CODE FINISH-->
+
+
+
+
+<!--WOW MOMENT 2 CODE START-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  <!--WOW MOMENT 2 CODE FINISH-->
+
+  <div class="section" id="section00"><h3>MEET MY FAMILY</h3>
+<h4>Mom and Dad</h4>
+
+<div class="esquinas">
+  <img src="http://www.annefrank.ch/system/html/elterbeach-bea4de56.jpg"/>
+</div>
+<h4>Margot</h4>
+<div class="esquinas">
+  <img src="http://68.media.tumblr.com/85729f39e334e077c79dcc9136c456fb/tumblr_nr168p5eSz1u98pyso1_400.jpg"/>
+</div>
+
+<h4> Four corners</h4>
+
+<div class="esquinas">
+  <img src="https://www.ushmm.org/lcmedia/photo/lc/image/61/61759.jpg"/>
+  <div class="esquinasbis"></div><!-- ADDED BOX -->
+</div>
+
+<div class="esquinas">
+  <img src="http://2.bp.blogspot.com/-7QOgLRBuudU/UZJ0E3bTQhI/AAAAAAAAKGA/9A3hQD6h9RI/s800/million-dollar-quartet.jpg"/>
+  <div class="esquinasbis"></div><!-- ADDED BOX -->
+</div>
 
 
   </div>
 
-  <div class="section" id="section00"><p>"I don't want to have lived in vain like most people. I want to be useful or bring enjoyment to all people, even those I've never met. I want to go on living even after my death!"</p>
 
-  </div>
+
 
   <div class="section" id="section1">
       <div class="slide" id="slide1"><h1>Content</h1>
@@ -215,7 +183,7 @@
   </div>
 
 
-</div>
+</div><!--CIERRA CONTENT-->
 
 
 <!--full page demo-->
