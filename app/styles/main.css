@@ -47,6 +47,7 @@
   #section3{
     background-size: cover;
     background-attachment: fixed;
+
   }
 
   /* Defining each sectino background and styles
@@ -194,7 +195,7 @@ body {
 }
 .mast__title {
   font-family: "Cutive Mono", monospace;/*CODIGO DEL PRIMER TITULO*/
-  font-size: 2.0em;
+  font-size: 1.8em;
   font-weight: 400;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -1087,7 +1088,12 @@ body {
 * {
   box-sizing: border-box;
 }
+body {
 
+ background-image: repeating-radial-gradient(circle, 
+    #E4D4BB, #E7DAC6 50%, #E7DAC6 100%
+  );
+}
 
 img {
   max-width: 100%;
@@ -1866,6 +1872,8 @@ div.transbox p {
   font-weight: 900;
   color: #FAFAFA;
   font-family: "Cutive Mono", monospace;
+  background-size: cover;
+
 }
 
 /*-----ANIMATIONS START-----*/
@@ -1911,3 +1919,10 @@ div.transbox p {
 
 /*set an animation duration of 3s*/
 /*set an animation-delay of 2s*/
+
+.bookWrap{
+
+
+  animation-duration: 6s;
+
+}
