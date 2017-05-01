@@ -1,0 +1,401 @@
+/* base layout changes */
+body.huis { background:url('../images/huis/body1_hi.jpg') 50% 0 no-repeat #000; }
+body.huis .section { background-color:transparent; }
+body.huis #header { 
+	background:none transparent; 
+	padding-bottom:0;
+}
+	body.huis #header .subcanvas {
+		height:200px;
+		padding-top:0;
+		padding-bottom:0;
+		background:url('../images/huis/header.png') no-repeat;
+	} 
+		body.huis #header a#logo {
+			position:absolute;
+			left:20px;
+			top:95px;
+			margin:0;
+			width:496px;
+			height:66px;
+			background:url('../images/huis/logo_en.png') no-repeat;
+			overflow:hidden;
+			text-indent:-3000em;
+			white-space:nowrap;
+		}
+		body.huis_nl #header a#logo { background-image:url('../images/huis/logo_nl.png'); }
+			body.huis #header a#logo img { 
+				position:absolute;
+				left:-3000em;
+			}
+			
+	    body.huis_de #header a#logo { background-image:url('../images/huis/logo_de.png'); }
+			body.huis #header a#logo img { 
+				position:absolute;
+				left:-3000em;
+			}
+			
+/* section backgrounds */
+body.huis_bg1 { background-image:url('../images/huis/body1_hi.jpg'); }
+body.huis_bg2 { background-image:url('../images/huis/body2_hi.jpg'); }
+body.huis_bg3 { background-image:url('../images/huis/body3_hi.jpg'); }
+body.huis_bg4 { background-image:url('../images/huis/body4_hi.jpg'); }
+body.huis_bg5 { background-image:url('../images/huis/body5_hi.jpg'); }
+body.huis_bg6 { background-image:url('../images/huis/body6_hi.jpg'); }
+body.huis_bg7 { background-image:url('../images/huis/body7_hi.jpg'); }
+body.huis_bg8 { background-image:url('../images/huis/body8_hi.jpg'); }
+
+body.huis_bg9 { background-image:url('../images/huis/body9_hi.jpg'); }
+body.en.huis_bg9 { background-image:url('../images/huis/body9_hi_en.jpg'); }
+body.de.huis_bg9 { background-image:url('../images/huis/body9_hi_en.jpg'); }
+
+/* homepage */
+#intro_toolbox .page_intro {
+	padding-right:190px;
+}
+#intro_toolbox .page_intro .extended {
+	margin-right:-190px;
+}
+#toolbox {
+	position:absolute;
+	top:34px;
+	right:0;
+	width:162px;
+	margin:0;
+	padding:11px 5px 11px 13px;
+}
+	#toolbox h2 {
+		font-size:1.2307em;
+		line-height:1.25;
+	}
+	.addthis_toolbox {
+		padding:1px 0 4px 0;
+	}
+
+/* application */
+body.app {
+	background-repeat:no-repeat !important;
+	background-position:50% -321px !important;
+	padding:20px 0 0 0;
+}
+#application {
+	width:1004px;
+	height:620px;
+	margin:0 auto;
+}
+		
+/* navigation changes */
+body.huis #navigation {
+	top:0;
+}
+body.huis #nav_primary {
+	position:absolute;
+	left:0;
+	top:10px;
+	width:960px;
+	padding:0 0 2px 0;
+	background:url('../images/huis/navigation.png') 0 100% repeat-x;
+	font-size:1.08em;
+	line-height:1.29;
+}
+	body.huis #nav_primary li {
+		position:relative; 
+		margin-right:-1px;
+	}
+	body.huis #nav_primary li a {
+		display:block;
+		padding:0;
+		background:url('../images/huis/navigation_border.png') 100% 0 no-repeat transparent;
+		color:#fff;
+		font-weight:bold;
+		text-shadow:#000 0 0.1em 0.2em
+	}
+	body.huis #nav_primary li a:hover,
+	body.huis #nav_primary li.hover a,
+	body.huis #nav_primary li.active a,
+	body.huis #nav_primary li.current a { background-image:url('../images/huis/navigation_hover.png'); }
+		body.huis #nav_primary li a span {
+			display:block;
+			padding:6px 18px 5px 20px;
+		}
+		body.huis #nav_primary li a span:hover,
+		body.huis #nav_primary li.hover a span,
+		body.huis #nav_primary li.active a span,
+		body.huis #nav_primary li.current a span {
+			background:url('../images/huis/navigation_border.png') -1px 0 no-repeat transparent;
+		}
+		body.huis #nav_primary .nav_sub { 
+			width:460px; 
+			padding-top:14px;
+			top:1.5em;
+			left:-65px;
+		}
+		body.huis #nav_primary .nav_sub_arrow { 
+			top:1.5em;
+			background-image:url('../images/huis/nav_sub_arrow.gif'); 
+		}
+			body.huis #nav_primary .nav_sub_top { background:url('../images/huis/nav_sub_top.png') repeat-y; }
+			body.huis #nav_primary .nav_sub_btm {
+				height:15px;
+				background:url('../images/huis/nav_sub_btm.png');
+			}
+			body.huis #nav_primary .nav_sub_container {
+				position:relative;
+				z-index:2;
+				min-height:86px;
+				padding:20px 188px 25px 50px;
+				background:url('../images/huis/nav_sub_container.png') repeat-y;
+			}
+			body.huis #nav_primary .nav_sub_container:after {
+				content:'.';
+				display:block;
+				clear:both;
+				visibility:hidden;
+				height:0;
+			} 
+				body.huis #nav_primary strong {
+					display:block;
+					margin:0 0 0.5em 0;
+					font-size:1.14em;
+				}
+				body.huis #nav_primary p { margin:0; }
+				body.huis #nav_primary img { 
+					position:absolute;
+					top:-7px;
+					right:9px;
+				}
+				
+/* navigation options */
+body.huis #nav_primary .options {
+	position:absolute;
+	right:0px;
+	top:0px;
+	list-style:none;
+	margin:0;
+	padding:3px 10px 2px 0;
+}
+	body.huis #nav_primary .options li { padding:0 4px; }
+		body.huis #nav_primary .options li a {
+			float:left;
+			text-shadow:none;
+			overflow:hidden;
+			padding:0;
+			text-indent:-3000em;
+			white-space:nowrap;
+		}
+		body.huis #nav_primary .options .language a.lang {
+			width:21px;
+			height:29px;
+			margin-bottom:-4px;
+			background: transparent url('../images/huis/options_languageswitch.png') no-repeat;
+		}
+		body.huis #nav_primary .options .language:hover a.lang { 
+			background-position:0 -25px;
+		}
+		body.huis #nav_primary .options .language .lang_top {
+			background: transparent url('../images/huis/lang_sub_top.png') no-repeat;
+			position:absolute;
+			display:none;
+			width:134px;
+			height:35px;
+			right:-12px;
+			top:-3px;
+		}
+		body.huis #nav_primary .options .language:hover .lang_top {
+			display:block;
+		}
+		body.huis #nav_primary .options .language .lang_sub {
+			background:transparent url("../images/huis/lang_sub_background.png") bottom no-repeat;
+			position:absolute;
+			padding:4px 0 3px;
+			display:none;
+			width:134px;
+			right:-12px;
+			top:32px;
+		}
+		body.huis #nav_primary .options .language:hover .lang_sub {
+			display:block;
+		}
+		body.huis #nav_primary .options li.addthis a {
+			float:left;
+			display:inline;
+			overflow:visible;
+			padding:1px 2px 0 2px;
+			background:none repeat scroll 0 0 transparent;
+			color:#FFFFFF;
+			font-size:.86em;
+			font-weight:normal;
+			text-indent:0;
+			text-shadow:none;
+			white-space:nowrap;
+		}
+			body.huis #nav_primary li.addthis a span {
+				display:block;
+				float:left;
+				height:16px;
+				line-height:16px !important;
+				overflow:hidden;
+				width:16px;
+				background:transparent url("//s7.addthis.com/static/r07/widget22.png") no-repeat scroll 0 -1008px;
+				padding:0;
+			}
+		
+		body.huis #nav_primary .options .language .lang_sub ul { 
+			margin:0;
+		}
+			body.huis #nav_primary .options .language .lang_sub ul li { 
+				background:transparent url("../images/huis/options_language_border.png") repeat-x top;
+				list-style:none;
+				width:130px;
+				margin:0 2px;
+				padding:0;
+				height:26px;
+			}
+			body.huis #nav_primary .options .language .lang_sub ul li:hover { 
+				background:transparent url("../images/huis/options_language_hover.png") repeat-x top;
+			}
+				body.huis #nav_primary .options .language .lang_sub li a {
+					text-indent:0;
+					overflow:none;
+					float:none;
+					background:none;
+					font-weight:normal;
+					font-size: 0.86em;
+					display:block;
+					height:15px;
+					padding:5px 4px 5px 24px;
+				}
+				body.huis #nav_primary .options .language .lang_sub li.selected a {
+					background: transparent url("../images/huis/options_language_selected.png") no-repeat 6px 6px;
+				}
+		body.huis #nav_primary .options .sound a {
+			width:21px;
+			height:25px;
+			background:url('../images/huis/options_soundswitch.png') no-repeat;
+		}
+		body.huis #nav_primary .options .sound a:hover { background-position:0 -50px; }
+		body.huis #nav_primary .options .sound a.unmute { background-position:0 -25px; }
+		body.huis #nav_primary .options .sound a.unmute:hover { background-position:0 -75px; }
+		body.huis #nav_primary .options .language a:hover { background-position:0 -25px; }
+		body.huis #nav_primary .options .bandwidth a {
+			width:32px;
+			height:25px;
+			background:url('../images/huis/options_bandwidthswitch.png') no-repeat;
+		}
+		body.huis #nav_primary .options .bandwidth a:hover { background-position:0 -50px; }
+		body.huis #nav_primary .options .bandwidth a.lq { background-position:0 -25px; }
+		body.huis #nav_primary .options .bandwidth a.lq:hover { background-position:0 -75px; }
+		body.huis #nav_primary .options li .unmute,
+		body.huis #nav_primary .options li .hq {
+			display:none;
+		}
+		body.huis #nav_primary .options li.toggle .mute,
+		body.huis #nav_primary .options li.toggle .lq {
+			display:none;
+		}
+		body.huis #nav_primary .options li.toggle .unmute,
+		body.huis #nav_primary .options li.toggle .hq {
+			display:block;
+		}
+		body.huis #nav_primary .options .lang fieldset {
+			margin:3px 0 0;
+		}
+		body.huis #nav_primary .options .lang select {
+			font-size:12px;
+			width:auto;
+			margin:0;
+		}
+		body.huis #nav_primary .options .lang label {
+			display:none;
+		}
+/* footer changes */
+body.huis #footer_nav { 
+	padding-top:10px;
+	background-color:#000; 
+}
+body.huis #footer_nav .subcanvas { 
+	background-image:url('../images/huis/footer_logo_en.png') !important;
+	background-position:0 100%;
+	background-repeat:no-repeat; 
+}
+
+body.huis_nl #footer_nav .subcanvas { 
+	padding-top:0;
+	background-image:url('../images/huis/footer_logo_nl.png') !important; 
+}
+body.huis #sm_basic { 
+	background-color:#000000; 	
+	padding-top:10px;
+}
+	body.huis #canvas .sm_home .columns { background-image:url('../images/huis/sm_basic.gif'); }
+		body.huis #canvas .sm_home .column { width:200px; }
+
+/* about block */
+#about {
+	position:relative;
+	margin:0 -10px;
+	padding:0 10px 0 370px;
+	overflow:hidden;
+	font-size:1.07em;
+	line-height:1.57;
+	line-height:1.6923;
+}
+	#about h2 { margin-left:-370px; }
+	#about .list_links a { color:#3f3f3f; }
+	#about .list_links a:hover { color:#fff; }
+	#about .trg_large { 
+		float:left;
+		margin:0 0 0 -370px;
+		font-size:0.93em;
+	}
+	
+body.huis .trg_large p { font-size:1.08em; }
+
+/* addthis */
+#footer .addthis_toolbox {
+	padding-right:1em;
+	color:#404040;
+}
+	#back_to_top .addthis_toolbox a,
+	.addthis_toolbox a {
+		color:#fff;
+		line-height:16px;
+		text-decoration:none;
+	}
+    
+/* flashtip */
+.flash-tip {
+    background: #fff;
+    position: absolute;
+    display: none;
+    z-index: 100;
+    padding: 20px;
+    font-size: 14px;
+    width: 155px;
+    margin-top: 40px;
+    margin-left: -87px;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.5);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.flash-tip .pointer{
+    position: absolute;
+    display: block;
+    top: -17px;
+    left: 50%;
+    width: 33px;
+    height: 20px;
+    margin-left: -17px;
+    background: url('../images/huis/nav_sub_arrow.gif') no-repeat;
+}
+
+.flash-tip p {
+    margin: 4px 0 0 0;
+}
+
+.flash-tip strong{
+    display: block;
+    margin: 0 0 0.5em 0;
+    font-size: 17px;
+}

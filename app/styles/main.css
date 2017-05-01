@@ -63,6 +63,7 @@
     position: relative;
     color: white;
 
+
   }
 
 
@@ -100,13 +101,12 @@ padding: 6%;
   * --------------------------------------- */
   #slide1{
     padding: 6% 0 0 0;
-    background-color: black;
-    
+    background-image: url("../images/annex.jpg");
 
   }
   #slide2{
     padding: 6% 0 0 0;
-     background-color: black;
+     background-image: url("../images/diary.jpg");
   }
 
 
@@ -141,7 +141,7 @@ body {
 
 .sep {
   border: 0;
-  width: 10em;
+  width: 3em;
   height: 1px;
   margin: 1em 0;
   background-color: rgba(255, 255, 255, 0.4);
@@ -184,18 +184,19 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .mast__header {
-  padding: 7%;
+  padding: 5%;
 
 }
 .mast__title {
   font-family: "Cutive Mono", monospace;/*CODIGO DEL PRIMER TITULO*/
-  font-size: 4.0em;
+  font-size: 2.0em;
   font-weight: 400;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   text-align: left;
 
@@ -309,7 +310,7 @@ body {
 }
 .mast__text {                     /*TITULO LETRA 2*/
   font-family: "Cutive Mono", monospace;
-  font-size: 2.2em;
+  font-size: 1.5em;
   margin: 0 0 0.5em;
   line-height: 1.5;
   white-space: pre;
@@ -1221,25 +1222,6 @@ img {
 
 /*CODE FOR SLIDE 1*/
 
-div.background {
-  background: url(klematis.jpg) repeat;
-  
-}
-
-div.transbox {
-  margin: 150px;
-  background-color: #ffffff;
- 
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-
-div.transbox p {
-  margin: 10%;
-  font-weight: bold;
-  color: #000000;
-}
-
 
 
 
@@ -1266,7 +1248,7 @@ div.transbox p {
   height:346px;
   width:230px;
   position:absolute;
-  left:570px;
+  left:500px;
   top:0;
 
   -webkit-transform-style: preserve-3d;
@@ -1359,13 +1341,12 @@ div.transbox p {
   border: 0
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 h3
 {
   width: 400px;
   color:#ebebeb;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Cutive Mono", monospace;
   font-size: 150%;
   font-weight: 800;
   text-transform: capitalize;
@@ -1389,7 +1370,7 @@ ul{list-style: none}
 
 #timeline ul
 {
-  min-height: 700px;/*esto hace que se achique la linea del centro grande*/
+  min-height: 500px;/*esto hace que se achique la linea del centro grande*/
   border-top: 0;
   border-left: 4px solid transparent;
   border-left-color: #7ab800; /* Fullback For Browser That Not Support vw & vh */
@@ -1481,7 +1462,7 @@ ul{list-style: none}
   text-transform: capitalize;
   line-height: 150%;
   font-size: 85%;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Cutive Mono", monospace;
   position: absolute;
   top: 50px;
 
@@ -1838,7 +1819,95 @@ a:hover{
 }
 
 
+/*SLIDE 1 CODE*/
 
 
 
 
+/*slide 2 code*/
+
+.blackbox{
+  width: 50%;
+  margin: auto;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+  padding: 50px;
+  float: middle;
+  text-align: center;
+  white-space: normal;
+  
+ 
+
+  }
+
+  .btn-1 {
+  background-image: linear-gradient(to right, #424d4f 0%, #99e8f6 51%, #2e3637 100%);
+  font-family: "Cutive Mono", monospace;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+div.transbox p {
+  margin: 1%;
+  font-weight: bold;
+  color: white;
+  font-family: "Cutive Mono", monospace;
+  font-size: 14px;
+  text-align: justify;
+}
+
+/*SLIDE 1 CODE*/
+
+.slide1text {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 900;
+  color: #FAFAFA;
+  font-family: "Cutive Mono", monospace;
+}
+
+/*-----ANIMATIONS START-----*/
+
+/*TEXT ANIMATION 1*/
+@keyframes delay {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+
+/*set an animation-delay of 2s*/
+
+/*TEXT ANIMATION 2*/
+@keyframes color {
+    0%   {color: lightblue;}
+    25%  {color: mistyrose;}
+    50%  {color: khaki;}
+    100% {color: black;}
+}
+
+
+
+/*change the colors*/
+/*change the animation-duration to 5s*/
+/*change the animation-iteration-count*/
+
+/*TEXT ANIMATION 3*/
+
+@keyframes bounceIn {
+  0% {transform: scale(0.1);
+    opacity: 0;}
+  60% {transform: scale(1.2);
+    opacity: 1;}
+  100% {transform: scale(1);}
+}
+
+.slide1text {
+  animation-name: bounceIn;
+  animation-duration: 4s;
+}
+
+/*set an animation duration of 3s*/
+/*set an animation-delay of 2s*/
