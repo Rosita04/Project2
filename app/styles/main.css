@@ -5,12 +5,6 @@
   padding: 0.2em 0;
 }
 
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-}
-
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -31,7 +25,7 @@ body {
   * --------------------------------------- */
   h1{
     font-size: 5em;
-    font-family: arial,helvetica;
+    /*font-family: arial,helvetica;*/
     color: #fff;
     margin:0;
     padding:0;
@@ -59,27 +53,43 @@ body {
   * --------------------------------------- */
   #section0{
     margin: 0; height: 100%; overflow: hidden;
+     padding: 0%;
+
+  
   }
   #section0 h1{ 
     top: 50%;/* esta es la letra del centro*/
     transform: translateY(-50%);
     position: relative;
     color: white;
+
   }
 
 
+#section00{
+
+background-image: url("../images/section00.jpg");
+padding: 6%;
+
+}
+
 #section1{
+  padding: 0%;
+
+
 
 }
 
   #section2{
-    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg3.jpg);
-    padding: 6% 0 0 0;
-    color: red;
+    background-image: url("../images/section2.jpg");
+    padding: 0%;
+    
   }
+
+
+
   #section3{
-    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg4.jpg);
-    padding: 6% 0 0 0;
+    padding: 20% 0 0 0;
   }
   #section3 h1{
     color: #000;
@@ -89,13 +99,14 @@ body {
   /*Adding background for the slides
   * --------------------------------------- */
   #slide1{
-    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg2.jpg);
     padding: 6% 0 0 0;
+    background-color: black;
+    
 
   }
   #slide2{
-    background-image: url(https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/bg5.jpg);
     padding: 6% 0 0 0;
+     background-color: black;
   }
 
 
@@ -114,12 +125,11 @@ body {
 }
 
 body {
-
   margin: 0;
   width: 100%;
   font-family: "Cutive Mono", monospace;
   line-height: 1.5;
-  font-weight: 700;/*HACE QUE SE HAGA MAS BRILLANTE LA LETRA 2*/
+  font-weight: 400;
   font-style: normal;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -129,9 +139,9 @@ body {
 
 }
 
-.sep { /*LINEA EN MEDIO DE TITULO 1 Y 2*/
+.sep {
   border: 0;
-  width: 3em;
+  width: 10em;
   height: 1px;
   margin: 1em 0;
   background-color: rgba(255, 255, 255, 0.4);
@@ -149,8 +159,10 @@ body {
   height: 100vh;
   color: #fff;
   background-color: #111;
+
+
 }
-.mast:after {
+.mast:after {/*foto de atras*/
   z-index: 0;
   content: '';
   position: absolute;
@@ -172,32 +184,36 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-position: 50%;
+  background-attachment: fixed;
 }
+
 .mast__header {
-  padding: 8%;
-  padding-bottom: 5%;
+  padding: 7%;
+
 }
-.mast__title { /*CODIGO DE ANNE FRANK PRIMER TITULO*/
-  font-family: "Cutive Mono", monospace;
-  font-size: 2.9em;/*TITULO 1 TAMANO DE LETRA*/
-  font-weight: 500;
-  letter-spacing: 0.3em;
+.mast__title {
+  font-family: "Cutive Mono", monospace;/*CODIGO DEL PRIMER TITULO*/
+  font-size: 4.0em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: left;
+
 }
 .mast__title span {
   -webkit-animation: letter-glow 0.7s 0s ease both;
           animation: letter-glow 0.7s 0s ease both;
 }
-.mast__title span:nth-child(1) {
-  -webkit-animation-delay: 0.05s;
+.mast__title span:nth-child(1) { /*letra M*/
+ -webkit-animation-delay: 0.05s;
           animation-delay: 0.05s;
+ 
+
 }
 .mast__title span:nth-child(2) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
+
 }
 .mast__title span:nth-child(3) {
   -webkit-animation-delay: 0.15s;
@@ -291,18 +307,20 @@ body {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s;
 }
-.mast__text { /*CODIGO DE ANNE FRANK TITULO DOS*/
+.mast__text {                     /*TITULO LETRA 2*/
   font-family: "Cutive Mono", monospace;
-  font-size: 1.8em;
+  font-size: 2.2em;
   margin: 0 0 0.5em;
   line-height: 1.5;
   white-space: pre;
   text-align: left;
-  font-weight: 800;
+  
+
 }
 .mast__text span {
   -webkit-animation: letter-glow 0.7s 0s ease both;
           animation: letter-glow 0.7s 0s ease both;
+
 }
 .mast__text span:nth-child(1) {
   -webkit-animation-delay: 0.05s;
@@ -1063,182 +1081,764 @@ body {
 
 
 
-
-
-/*//WOW MOMENT 2*/
+/*POLAROID IMAGES ON SECTION00*/
 
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: "Indie Flower";
-  line-height: 1.618em;
-  background-size: 10px 10px;
-}
+
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .wrapper {
   width: 100%;
   padding: 0 2rem;
-  text-align: right;
-  margin-left: 90%;
-
+  text-align: center;
 }
+
 .polaroid {
   background: #fff;
   padding: 1rem;
-  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.25rem 9rem rgba(0, 0, 0, 0.2);
 }
+
 .caption {
-  font-size: 1.125rem;
+  font-size: 2.0rem;
   text-align: center;
   line-height: 2em;
-  color: gray;
 }
+
 .item {
   display: inline-block;
   margin-top: 2rem;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
+
 .item .polaroid:before {
   content: '';
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n+1) {
-  transform: scale(0.8, 0.8) rotate(5deg);
+  -webkit-transform: scale(0.8, 0.8) rotate(5deg);
+          transform: scale(0.8, 0.8) rotate(5deg);
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n+1) .polaroid:before {
-  transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
   height: 20%;
   width: 47%;
   bottom: 30px;
   right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
 }
+
 .item:nth-of-type(4n+2) {
-  transform: scale(0.8, 0.8) rotate(-5deg);
+  -webkit-transform: scale(0.8, 0.8) rotate(-5deg);
+          transform: scale(0.8, 0.8) rotate(-5deg);
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n+2) .polaroid:before {
-  transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
   height: 20%;
   width: 47%;
   bottom: 30px;
   left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
 }
+
 .item:nth-of-type(4n+4) {
-  transform: scale(0.8, 0.8) rotate(3deg);
+  -webkit-transform: scale(0.8, 0.8) rotate(3deg);
+          transform: scale(0.8, 0.8) rotate(3deg);
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n+4) .polaroid:before {
-  transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
   height: 20%;
   width: 47%;
   bottom: 30px;
   right: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
 }
+
 .item:nth-of-type(4n+3) {
-  transform: scale(0.8, 0.8) rotate(-3deg);
+  -webkit-transform: scale(0.8, 0.8) rotate(-3deg);
+          transform: scale(0.8, 0.8) rotate(-3deg);
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n+3) .polaroid:before {
-  transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
   height: 20%;
   width: 47%;
   bottom: 30px;
   left: 12px;
-  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
 }
+
 .item:hover {
-  filter: none;
-  transform: scale(1, 1) rotate(0deg) !important;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1, 1) rotate(0deg) !important;
+          transform: scale(1, 1) rotate(0deg) !important;
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 .item:hover .polaroid:before {
   content: '';
   position: absolute;
   z-index: -1;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   height: 90%;
   width: 90%;
   bottom: 0%;
   right: 5%;
-  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
 
-/*section 00 code*/
 
-#section00{
-font-family: "Cutive Mono", monospace;
-margin-bottom: 80%;
-background-color:white;
-font-size: 24px;
+/*CODE FOR SLIDE 1*/
 
-
-
+div.background {
+  background: url(klematis.jpg) repeat;
+  
 }
 
-/* Photo album effect */
-.esquinas {
-  position: relative;  
-  display: table;
-  max-width: 90%;
-  margin: 50px auto;
+div.transbox {
+  margin: 150px;
+  background-color: #ffffff;
+ 
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
 }
-.esquinas img {
-  display: table-cell;
-  max-width:100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 8px;
-  background: #fff;
-  box-shadow: 0 0 2px #666;
-  box-sizing: border-box;
+
+div.transbox p {
+  margin: 10%;
+  font-weight: bold;
+  color: #000000;
 }
-.esquinas:before,
-.esquinas:after,
-.esquinasbis:before,
-.esquinasbis:after {
+
+
+
+
+
+/*Anne Frank book section 0*/
+
+
+
+.bookWrap {
+  margin:25px auto;
+  height:346px;
+  width:230px;
+
+
+  position:relative;
+
+  -webkit-perspective: 1200px;
+     -moz-perspective: 1200px;
+          perspective: 1200px;
+}
+
+.book {
+  background:#000;
+  height:346px;
+  width:230px;
+  position:absolute;
+  left:570px;
+  top:0;
+
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  
+  -webkit-transition: -webkit-transform .5s ease 0s;
+     -moz-transition: -moz-transform .5s ease 0s;
+          transition: transform .5s ease 0s;
+  
+  -webkit-border-radius: 0 7px 7px 0;
+     -moz-border-radius: 0 7px 7px 0;
+          border-radius: 0 7px 7px 0;
+  
+  -webkit-perspective: 1200px;
+     -moz-perspective: 1200px;
+          perspective: 1200px;
+}
+
+.bookIntro {
+  -webkit-transform: rotateY(30deg);
+     -moz-transform: rotateY(30deg);
+          transform: rotateY(30deg);
+}
+
+.cover {
+  position:absolute;
+  left:0;
+  top:0;
+
+  height: 100%;
+  width: 230px;
+
+  max-width: 230px;
+  max-height: 346px;
+
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+
+  -webkit-transition: -webkit-transform .5s ease 0s, width .5s ease 0s;
+     -moz-transition: -moz-transform .5s ease 0s, width .5s ease 0s;
+            transition: transform .5s ease 0s, width .5s ease 0s;
+
+  -webkit-transform-origin: 0;
+     -moz-transform-origin: 0;
+          transform-origin: 0;
+}
+
+.cover:hover {  
+  width:210px;
+  
+  -webkit-transform: rotateY(-20deg);
+     -moz-transform: rotateY(-20deg);
+          transform: rotateY(-20deg);
+}
+
+.spine {
+  background:black;
+  width: 40px;
+  height: 344px;
   position: absolute;
-  bottom: -20px;
-  right: -40px;
-  content: "";
-  height: 40px;
-  width: 80px;
-  background: #ccc; /* TAPE ---Same color that wrapper background */
-  box-shadow: 0 -6px 9px -8px #333;
-  transform: rotate(-45deg);
-}
-.esquinas:after,
-.esquinasbis:after {
-  top: -20px;
-  left: -40px;
-  box-shadow: 0 6px 9px -8px #333;
-}
-.esquinasbis:before { 
-  top: auto;
-  left: -40px;
-  transform: rotate(45deg);
-}
-.esquinasbis:after {
-  left: auto;
-  right: -40px;
-  transform: rotate(45deg);
+  top: 0;
+  left:0;
+
+
+  -webkit-transform: rotateY(90deg);
+     -moz-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+
+  -webkit-transform-origin: 0;
+     -moz-transform-origin: 0;
+          transform-origin: 0;
 }
 
-body {
 
+
+
+/*SECTION 2 CODE timeline*/
+
+
+*
+{
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  border: 0
 }
-h1, h3 {
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+h3
+{
+  width: 400px;
+  color:#ebebeb;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 150%;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 6px 0;
+  margin: auto;
+  letter-spacing: 2px;
+ 
+}
+
+ul{list-style: none}
+/*------------------------------------------------------------
+#Start Timeline Rules
+------------------------------------------------------------*/
+#timeline
+{
+  width: 100%;
+  height: 700px;
+  padding: 20px 1%
+}
+
+#timeline ul
+{
+  min-height: 700px;/*esto hace que se achique la linea del centro grande*/
+  border-top: 0;
+  border-left: 4px solid transparent;
+  border-left-color: #7ab800; /* Fullback For Browser That Not Support vw & vh */
+  -webkit-border-image: -webkit-linear-gradient( 
+    top, 
+    #7ab800 0%,
+    #0085c3 35%,
+    #f2af00 50%,
+    #ce1126 65%,
+    #6e2585 100%);
+  -moz-border-image: -moz-linear-gradient( 
+    top, 
+    #7ab800 0%,
+    #0085c3 35%,
+    #f2af00 50%,
+    #ce1126 65%,
+    #6e2585 100%);
+  -ms-border-image: -ms-linear-gradient( 
+    top, 
+    #7ab800 0%,
+    #0085c3 35%,
+    #f2af00 50%,
+    #ce1126 65%,
+    #6e2585 100%);
+  -o-border-image: -o-linear-gradient( 
+    top, 
+    #7ab800 0%,
+    #0085c3 35%,
+    #f2af00 50%,
+    #ce1126 65%,
+    #6e2585 100%);
+    border-image: linear-gradient(top, 
+    #7ab800 0%, 
+    #0085c3 35%, 
+    #f2af00 50%, 
+    #ce1126 65%, 
+    #6e2585 100%);
+  border-image-slice: 1;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  perspective: 2000px
+}
+
+#timeline ul li:after
+{
+  content: "\2713";/*CIRCULITOS DEM MEDIO*/
+  font-family: fontawesome;
+  display:block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-weight: 100;
+  font-size: 100%;
+  line-height:35px;
+  text-align: center;
+  background-color: #d8d8d8;
+  color: #323232;
+  position:absolute;
+  transition: transform 1s linear
+}
+
+#timeline ul li:nth-child(2):after
+{
+  background-color: #d8d8d8;/*CIRCULITOS DEM MEDIO*/
+}
+
+#timeline ul li:nth-child(3):after
+{
+  content: "\f11d";
+  background-color: #d8d8d8;/*CIRCULITOS DEM MEDIO*/
+}
+
+#timeline ul li:nth-child(4):after
+{
+  content: "\f11d";
+  background-color: #d8d8d8;/*CIRCULITOS DEM MEDIO*/
+}
+
+#timeline ul li:last-child:after
+{
+  content: "\f11d";
+  background-color:#d8d8d8;/*CIRCULITOS DEM MEDIO*/
+}
+
+#timeline ul li p
+{
+  width: 15%;
+  text-transform: capitalize;
+  line-height: 150%;
+  font-size: 85%;
+  font-family: 'Noto Sans', sans-serif;
+  position: absolute;
+  top: 50px;
+
+}
+
+#timeline ul li:first-child p/*color de letra prmer cuadro*/
+{
+  color: #ebebeb;
+  transform-origin: left;
+  transition: transform 1.5s linear;
+  font-weight:bold;
+}
+
+#timeline ul li:first-child:hover p,
+#timeline ul li:nth-child(3):hover p,
+#timeline ul li:last-child:hover p
+{
+  text-align: left;
+  transform: rotateY(-175deg) translate3d(60px,0,5px);
+  transition: transform 1.5s linear;
+}
+
+#timeline ul li:nth-child(2):hover p,
+#timeline ul li:nth-child(4):hover p
+{
+  text-align: left;
+  transform: rotateY(175deg) translate3d(-60px,0,5px);
+  transition: transform 1.5s linear;
+}
+
+#timeline ul li:first-child:hover p span,
+#timeline ul li:nth-child(3):hover p span,
+#timeline ul li:nth-child(5):hover p span
+{
+  transform: rotateY(-175deg)
+}
+
+#timeline ul li:nth-child(2):hover p span,
+#timeline ul li:nth-child(4):hover p span
+{
+  transform: rotateY(175deg)
+}
+
+#timeline ul li:first-child:hover p time,
+#timeline ul li:nth-child(3):hover p time,
+#timeline ul li:last-child:hover p time
+{
+  display: block;
+  transform: rotateY(-175deg)
+}
+
+#timeline ul li:nth-child(2):hover p time,
+#timeline ul li:nth-child(4):hover p time
+{
+  display: block;
+  transform: rotateY(175deg)
+}
+
+#timeline ul li:nth-child(2) p/*LETRA DE segundo CUADRO*/
+{
+  color: #ebebeb;
+  transform-origin: right;
+  transition: transform 1.5s linear;
+  font-weight:bold;
+}
+
+#timeline ul li:nth-child(3) p/*LETRA DE tercero CUADRO*/
+{
+  color: #ebebeb;
+  transform-origin: left;
+  transition: transform 1.5s linear;
+  font-weight:bold;
+}
+
+#timeline ul li:nth-child(4) p/*LETRA DE 4to CUADRO*/
+{
+  color: #ebebeb;
+  transform-origin: right;
+  transition: transform 1.5s linear;
+  font-weight:bold;
+}
+
+#timeline ul li:last-child p
+{
+  color: #ebebeb;/*LETRA DE 5to CUADRO*/
+  transform-origin: left;
+  transition: transform 1.5s linear;
+  font-weight:bold;
+}
+
+#timeline ul li p span{display: block}
+
+#timeline ul li:last-of-type p{width: 12%}
+
+#timeline ul li:last-of-type p time{display: block; white-space: nowrap}
+
+
+#timeline ul li:first-child:after,
+#timeline ul li:nth-child(2):after,
+#timeline ul li:nth-child(3):after,
+#timeline ul li:nth-child(4):after,
+#timeline ul li:last-child:after
+{
+  left: -18px;
+}
+
+#timeline ul li:first-child:after,
+#timeline ul li:first-child p
+{
+  top: 11%
+}
+
+#timeline ul li:nth-child(2):after,
+#timeline ul li:nth-child(2) p
+{
+  top: 31%
+}
+
+#timeline ul li:nth-child(3):after,
+#timeline ul li:nth-child(3) p
+{
+  top: 51%
+}
+
+#timeline ul li:nth-child(4):after,
+#timeline ul li:nth-child(4) p
+{
+  top: 71%
+}
+
+#timeline ul li:last-child:after,
+#timeline ul li:last-child p
+{
+  top: 88%
+}
+
+#timeline ul li:first-child:hover:after,
+#timeline ul li:nth-child(2):hover:after,
+#timeline ul li:nth-child(3):hover:after,
+#timeline ul li:nth-child(4):hover:after,
+#timeline ul li:last-child:hover:after
+{
+  transform: rotateZ(360deg);
+  transition: transform 1s linear
+}
+
+#timeline ul li p,
+#timeline ul li:last-of-type p
+{
+  width: 190px;/*HACE Q SE ENCOJA LA LETRA DEL CUADRO*/
+  padding: 0px
+}
+
+#timeline ul li:first-child p,
+#timeline ul li:nth-child(2) p,
+#timeline ul li:nth-child(3) p,
+#timeline ul li:nth-child(4) p,
+#timeline ul li:last-child p
+{
+  border: 2px solid transparent;
+  border-radius: 4px
+}
+
+#timeline ul li:first-child p{ border-color: #7ab800}/*BORDE CUADRO*/
+
+#timeline ul li:nth-child(2) p{ border-color: #0085c3}/*BORDE CUADRO*/
+
+#timeline ul li:nth-child(3) p{ border-color: #f2af00}/*BORDE CUADRO*/
+
+#timeline ul li:nth-child(4) p{ border-color: #ce1126}/*BORDE CUADRO*/
+
+#timeline ul li:last-child p{ border-color: #6e2585}/*BORDE CUADRO*/
+
+#timeline ul li:first-child p,/*este numero hace que se separe las flechas*/
+#timeline ul li:nth-child(3) p,
+#timeline ul li:last-child p
+{
+  left: 30px
+}
+
+#timeline ul li:nth-child(2) p,/*este numero hace que se separe las flechas*/
+#timeline ul li:nth-child(4) p
+{
+  left: -222px
+}
+
+#timeline ul li:first-child p:before,
+#timeline ul li:first-child p:after,
+#timeline ul li:nth-child(2) p:before,
+#timeline ul li:nth-child(2) p:after,
+#timeline ul li:nth-child(3) p:before,
+#timeline ul li:nth-child(3) p:after,
+#timeline ul li:nth-child(4) p:before,
+#timeline ul li:nth-child(4) p:after,
+#timeline ul li:last-child p:before,
+#timeline ul li:last-child p:after
+{
+  content: "";
+  display: block;
+  width: 0 ;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+}
+
+#timeline ul li:first-child p:before,
+#timeline ul li:nth-child(3) p:before,
+#timeline ul li:last-child p:before
+{
+  border-width: 11px 11px 11px 0 ;
+
+}
+
+#timeline ul li:nth-child(2) p:before,
+#timeline ul li:nth-child(4) p:before
+{
+  border-width: 11px 0 11px 11px
+}
+
+#timeline ul li:first-child p:after,
+#timeline ul li:nth-child(3) p:after,
+#timeline ul li:last-child p:after
+{
+  border-width: 10px 10px 10px 0
+}
+
+#timeline ul li:nth-child(2) p:after,
+#timeline ul li:nth-child(4) p:after
+{
+  border-width: 10px 0 10px 10px
+}
+
+#timeline ul li:first-child p:before
+{
+  border-color: transparent #7ab800 transparent transparent;/*piquito del verde primer cuador*/
+  top: 5px;
+  left: -11px
+}
+
+#timeline ul li:nth-child(2) p:before
+{
+  border-color: transparent transparent transparent #0085c3;/*piquito del verde primer cuador*/
+  top: 5px;
+  right: -11px
+}
+
+#timeline ul li:nth-child(3) p:before
+{
+  border-color: transparent #f2af00;/*piquito del verde primer cuador*/
+  top: 5px;
+  left: -11px
+}
+
+#timeline ul li:nth-child(4) p:before
+{
+  border-color: transparent transparent transparent #ce1126;/*piquito del verde primer cuador*/
+  top: 5px;
+  right: -11px
+}
+
+#timeline ul li:last-child p:before
+{
+  border-color: transparent #6e2585;/*piquito del verde primer cuador*/
+  top: 5px;
+  left: -11px
+}
+
+#timeline ul li:first-child p:after,
+#timeline ul li:nth-child(3) p:after,
+#timeline ul li:last-child p:after
+{ 
+  border-color: transparent #ebebeb;/*triangulos derecha*/
+  top: 6px;
+  left: -9px
+}
+
+#timeline ul li:nth-child(2) p:after,
+#timeline ul li:nth-child(4) p:after
+{
+  border-color: transparent #ebebeb;/*trianlgulos izq*/
+  top: 6px;
+  right: -9px
+}
+/*-------------------------------------
+SECTION3
+-------------------------------------*/
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+#polina { 
+  font-family: "Cutive Mono", monospace;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 33%;
+  margin:2rem;
+  float: right;
+  font-size: 1.0rem;
   text-align: center;
 }
+h4 {/*titulo*/
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+  text-align: center;
+}
+#polina button { 
+  display: block;
+  width: 60%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background; 
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+
+
+
+
+
+
